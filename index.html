@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Francois' portfolio</title>
+  <meta name="viewport" content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        
+        <ul class="menu">
+          <div class="toggle" id="toggle"><i class="fas fa-bars"></i></div>
+          <li><a href="#About">A PROPOS</a></li>
+          <li><a href="#MyProjects">PROJETS</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h1><span class="firstline">Francois Demilly</span><br><span class="secondline">Développeur Front End </span></h1>
+      </div>
+    </div>
+  </header>
+
+  <main id='About'>
+    <div class="introduction">
+      <div class='boxMyself'>
+        <div class='title'><h3>a propos</h3></div>
+        <div class="myself">
+          <div class="diamond">
+            <img src="images/selfie.jpg" />
+          </div>
+          <div class='description'>
+            <p>Bonjour, je suis François, Développeur Front End. Principalement intéressé par l’écosystème ReactJS et NodeJS. J’aime être entoure d’une équipe qui cultive épanouissement professionnel, la créativité et l’innovation.</p>
+          </div>
+        </div><!-- end of myself-->
+      </div> <!-- end of box -->
+      <div class='boxQualities' >
+        <div class='title'><h3>Qualités</h3></div>
+        <div class="qualities">
+          <ul>
+            <li>Capacité d'adaptation</li>
+            <li>Autonomie</li>
+            <li>Travail en équipe</li>
+            <li>Persévérance</li>
+            <li>Rigueur</li>
+            <li>Motivé</li>
+          </ul>
+        </div><!-- end of qualities-->
+      </div><!-- end of box-->
+      <div class='boxSkills'>
+        <div class='titleContainer'>
+          <div class='title'><h3>Compétances</h3></div>
+        </div><!-- end of titleContainer -->
+          <div class='skills'>
+            <div class='bar'><span>80%</span><div class='barFilled filled80'><div class='nameHolder'>HTML</div></div></div>
+            <div class='bar'><span>80%</span><div class='barFilled filled80'><div class='nameHolder'>CSS</div></div></div>
+            <div class='bar'><span>70%</span><div class='barFilled filled70'><div class='nameHolder'>Javascript</div></div></div>
+            <div class='bar'><span>40%</span><div class='barFilled filled40'><div class='nameHolder'>React</div></div></div>
+          </div>
+        </div>
+      </div> <!-- end of intro -->
+
+    <div class=project-box id='MyProjects'>
+      <div class='titleContainer'>
+        <div class='title'><h3>Projets</h3></div>
+      </div><!-- end of titleContainer -->
+        <div class='projects'> <!-- thumbmail of project -->
+          <div class="container-recipebox" id="container-recipebox">
+           <img src="images/recipebox.png">
+            <div class='img-description'>
+              <p>Recipe Box</p>
+               <!--<i class="fas fa-expand-arrows-alt" id='fa-recipebox'></i> -->
+               <a href='https://recipeboxfd-gl21wxuji.now.sh/' target='_blank'><i class="fas fa-link" ></i></a>
+               <div class="comments">
+                  <ul>
+                    <li>CRUD app basée on Create-React-App. Déployée on Now.sh</li>
+                    <li>Créée with HTML5, CSS3, ReactJS</li>
+                    <li>Les recettes sont conservées sur Firebase. La synchronisation de l’app avec la base de données est faite par Re-base et la fonction syncState</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="container-pomodoro" id="container-pomodoro">
+           <img src="images/pomodoro.png">
+            <div class='img-description'>
+              <p>Pomodoro Clock</p>
+               <!--<i class="fas fa-expand-arrows-alt" id='fa-pomodoro'></i> -->
+               <a href='https://francoisdemilly.github.io/PomodoroClock/' target='_blank'><i class="fas fa-link" ></i></a>
+               <div class="comments">
+                  <ul>
+                    <li>Créée avec HTML5, CSS3 et Javascript</li>
+                    <li>Les ensembles de données du DOM sont stockés dans un tableau, sur lequel une fonction forEach est appliquée. Pour chaque élément cliqué, des fonctions d'assistance sont déclenchées pour gérer la saisie utilisateur et démarrer le compte à rebours de l'horloge et le remplissage</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="container-calculator" id="container-calculator">
+            <img src="images/calculator.png">
+              <div class='img-description'>
+                <p>Calculator</p>
+                <!--<i class="fas fa-expand-arrows-alt" id='fa-calculator'></i> -->
+                <a href='https://francoisdemilly.github.io/JSCalculator/' target='_blank'><i class="fas fa-link" ></i></a>
+                <div class="comments">
+                  <ul>
+                    <li>Créée avec HTML5, CSS3 et Javascript</li>
+                    <li>Les valeurs et les ensembles de données du DOM sont stockés dans un tableau, sur lequel une fonction forEach est appliquée. Pour chaque élément cliqué, des fonctions d'assistance sont déclenchées pour gérer l'entrée utilisateur</li>
+                    <li>La fonction eval () est utilisée pour les calculs</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="container-simon" id="container-simon">
+            <img src="images/simon.png">
+              <div class='img-description'>
+                <p>Simon Game</p>
+                <!--<i class="fas fa-expand-arrows-alt" id='fa-simon'></i>-->
+                <a href='https://francoisdemilly.github.io/simonGame/' target='_blank'><i class="fas fa-link" ></i></a>
+                <div class="comments">
+                  <ul>
+                    <li>Créée avec HTML5, CSS3 et Javascript</li>
+                    <li>Simon Game est un jeu dont le but est que l'utilisateur répète le modèle montré avec le son par le programme. À chaque tour, une nouvelle étape est ajoutée au motif</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="container-tictactoe" id="container-tictactoe">
+            <img src="images/tictactoe.png">
+              <div class='img-description'>
+                <p>TicTacToe Game</p>
+                <!--<i class="fas fa-expand-arrows-alt" id='fa-tictactoe'></i>-->
+                <a href='https://francoisdemilly.github.io/TicTacToeGame/' target='_blank'><i class="fas fa-link" ></i></a>
+                <div class="comments">
+                  <ul>
+                    <li>Créée avec HTML5, CSS3 et Javascript</li>
+                    <li>Tic Tac Toe est un jeu dont le but est pour l'utilisateur de battre l'adversaire en tirant 3 marques consécutives</li>
+                    <li>Le choix de l'ordinateur est aléatoire, l'algorithme Minimax n'a pas été utilisé pour le jeu</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!--end of projects -->
+
+          <!-- slider and modal window -->
+          <!-- remove slider modal
+          <div class='modal-window modal-display ' id='modal-display'>
+
+            <div class='container-modal '>
+              <i class="fas fa-times fa-3x sliderClose" id='slider-close'></i>
+              <div class='container-slider modal-display' id='container-slider'>
+                <div class='contents recipebox' id='recipebox'>
+                  <img src='images/recipebox.png'>
+                </div>
+                <div class='contents pomodoro' id='pomodoro'>
+                  <img src='images/pomodoro.png'>
+                </div>
+                <div class='contents calculator' id='calculator'>
+                  <img src='images/calculator.png'>
+                </div>
+                <div class='contents simon' id='simon'>
+                  <img src="images/simon.png">
+                </div>
+                <div class='contents tictactoe' id='tictactoe'>
+                  <img src="images/tictactoe.png">
+                </div>
+              </div> <!-- end of container slider-->
+              <!--navigation of sliders < > -->
+              <!-- remove slider modal
+              <div class='nav-modal modal-display' id='nav-modal'>
+                <a class='prev-modal' id='prev-modal' >
+                  <i class="fas fa-chevron-left fa-5x"></i> <!-- &#12296; -->
+                  <!-- remove slider modal
+                </a>
+                <a class='next-modal' id='next-modal' >
+                  <i class="fas fa-chevron-right fa-5x"></i><!--&#12297; -->
+                <!-- remove slider modal</a>
+              </div><!-- end of navigation of sliders < > -->
+           <!-- remove slider modal </div><!-- end of container modal-->
+        <!-- remove slider modal  </div> <!-- end of modal-window--> 
+      </div> <!-- end of project box -->
+  </main>
+  <!-- footer -->
+  <footer id='Contact'>
+  <!-- ******************************************************************* -->
+    <div class='titleContainer'>
+      <div class='title'><h3>CONTACT</h3></div>
+    </div>
+  <!-- ******************************************************************* -->
+    <div class="img-footer">
+      <div class='container-contact'>
+        <div class='box-contact'><p>francois.demilly@gmail.com</p><br>
+                              <p>06-45-65-59-40</p></div>
+        <div class='box-contact'><a href='https://github.com/FrancoisDemilly?tab=repositories' target='_blank'><i class="fab fa-github-square fa-2x"></i></a></div>
+        <div class='box-contact'><a href='https://www.linkedin.com/in/francois-demilly-50378930' target='_blank'><i class="fab fa-linkedin fa-2x"></i></a></div>
+
+      </div>
+      <div class='copyright'>© 2018 codé avec ♥ par Francois Demilly</div>
+    </div><!--end of img-footer -->
+  </footer>
+</body>
+  <script src="script.js"></script>
+</html>
+
+
